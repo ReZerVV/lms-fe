@@ -1,0 +1,103 @@
+@import "@/shared/styles/shared/variables";
+
+.input {
+    width: 100%;
+    font-family: $primary-font;
+    outline: none;
+    border: none;
+    background: transparent;
+
+    &::placeholder {
+        color: rgba($dark-color, 0.5);
+    }
+
+    &__sm {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    &__md {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    &__lg {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__row_sm {
+        height: 32px;
+        gap: 8px;
+        padding: 0 12px;
+    }
+
+    &__row_md {
+        height: 40px;
+        gap: 12px;
+        padding: 0 16px;
+    }
+
+    &__row_lg {
+        height: 48px;
+        gap: 12px;
+        padding: 0 16px;
+    }
+
+    &__primary,
+    &__secondary {
+        color: $dark-color;
+    }
+
+    &__row_primary,
+    &__row_secondary {
+        border: 1px solid $border-color;
+        border-radius: 2px;
+        background: $white-color;
+        transition: border-color 0.2s;
+
+        &:focus-within {
+            border-color: $dark-color;
+        }
+    }
+
+    &__icon {
+        max-width: 16px;
+        max-height: 16px;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark-color;
+    }
+
+    &__row_error {
+        border-color: $red-color-500;
+
+        &:focus-within {
+            border-color: $red-color-500;
+        }
+    }
+
+    &__row_disabled {
+        border: 1px solid rgba($dark-color, 0.08);
+        background: rgba($dark-color, 0.04);
+        cursor: not-allowed;
+
+        .input,
+        .input__icon {
+            color: rgba($dark-color, 0.24);
+            cursor: not-allowed;
+        }
+    }
+}

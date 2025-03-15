@@ -1,0 +1,11 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.popup {
+    &__title {
+        font-size: 21px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.admin {
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark-color;
+        line-height: 32px;
+        margin-bottom: 35px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__empty {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .admin {
+        &__container {
+            max-width: 1140px !important;
+        }
+    }
+}

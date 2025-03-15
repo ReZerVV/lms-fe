@@ -1,0 +1,48 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.table {
+    width: 100%;
+    flex-grow: 1;
+
+    &__head {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        background: $gray-color-100;
+    }
+
+    &__head_row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 0.8fr;
+        align-items: center;
+    }
+
+    &__head_dots {
+        height: 40px;
+        width: 32px;
+        flex-shrink: 0;
+    }
+
+    &__head_item {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: $dark-color;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        padding: 0 24px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+}

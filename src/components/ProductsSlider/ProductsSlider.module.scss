@@ -1,0 +1,33 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.slider {
+    &__slide_box {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    &__btn_prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        margin: auto 0;
+        z-index: 5;
+    }
+
+    &__btn_next {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 10px;
+        margin: auto 0;
+        z-index: 5;
+    }
+}

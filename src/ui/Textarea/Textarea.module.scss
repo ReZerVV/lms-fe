@@ -1,0 +1,63 @@
+@import "@/shared/styles/shared/variables";
+
+.textarea {
+    width: 100%;
+    font-family: $primary-font;
+    color: $dark-color;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    outline: none;
+    background: $white-color;
+    transition: border-color 0.2s;
+    resize: vertical;
+
+    &:focus-within {
+        border-color: $dark-color;
+    }
+
+    &::placeholder {
+        color: rgba($dark-color, 0.5);
+    }
+
+    &__sm {
+        height: 100px;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 10px 12px;
+    }
+
+    &__md {
+        height: 140px;
+        gap: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        padding: 10px 16px;
+    }
+
+    &__lg {
+        height: 148px;
+        gap: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 10px 16px;
+    }
+
+    &__error {
+        border-color: $red-color-500;
+
+        &:focus-within {
+            border-color: $red-color-500;
+        }
+    }
+
+    &__disabled {
+        color: rgba($dark-color, 0.24);
+        border: 1px solid rgba($dark-color, 0.08);
+        background: rgba($dark-color, 0.04);
+        cursor: not-allowed;
+    }
+}

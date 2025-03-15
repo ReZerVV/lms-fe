@@ -1,0 +1,17 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.history {
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        color: $dark-color;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

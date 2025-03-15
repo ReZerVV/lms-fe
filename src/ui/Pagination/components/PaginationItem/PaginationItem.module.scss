@@ -1,0 +1,49 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.pagination {
+    &__item {
+        max-width: 36px;
+        width: 36px;
+        max-height: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 24px;
+        text-align: center;
+        border: 1px solid $dark-color;
+        border-right: none;
+        background: $white-color;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__item_active {
+        color: $white-color;
+        border-color: $dark-color;
+        background: $dark-color;
+    }
+
+    &__item_prev {
+        border-radius: 2px 0px 0px 2px;
+    }
+
+    &__item_next {
+        border-right: 1px solid $dark-color;
+        border-radius: 0 2px 2px 0;
+    }
+
+    &__arrow {
+        max-width: 24px;
+        width: 24px;
+        max-height: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $dark-color;
+    }
+}

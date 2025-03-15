@@ -1,0 +1,30 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 50px 0;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 32px;
+        margin-bottom: 20px;
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    &__box {
+        max-width: 660px;
+        width: 100%;
+        border: 1px solid $border-color;
+        border-radius: 6px;
+        padding: 40px 30px;
+        margin: 0 auto;
+    }
+}

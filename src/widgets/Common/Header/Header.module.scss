@@ -1,0 +1,81 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.header {
+    width: 100%;
+    background: $gray-color-100;
+
+    &__inner {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-weight: 800;
+        color: $dark-color;
+        line-height: 32px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__item_link {
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 18px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            width: 0%;
+            height: 1px;
+            background: $dark-color;
+            transition: width 0.3s;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__btn {
+        max-width: 36px;
+        max-height: 36px;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: $gray-color-100;
+        border: 1px solid $border-color;
+        border-radius: 100px;
+        background: $gray-color-900;
+        transition: opacity 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

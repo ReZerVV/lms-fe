@@ -1,0 +1,55 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__btn {
+        flex-shrink: 0;
+        padding: 0;
+    }
+
+    &__btn_sm {
+        max-width: 35px;
+        max-height: 35px;
+        width: 35px;
+        height: 35px;
+    }
+
+    &__btn_md,
+    &__btn_lg {
+        max-width: 40px;
+        width: 40px;
+    }
+
+    &__value {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        border-radius: 2px;
+        background: $gray-color-100;
+        overflow: hidden;
+    }
+
+    &__value_sm {
+        height: 35px;
+        width: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 18px;
+    }
+
+    &__value_md,
+    &__value_lg {
+        height: 40px;
+        width: 60px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 21px;
+    }
+}

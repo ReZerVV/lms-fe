@@ -1,0 +1,30 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.catalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 8px;
+    background: $white-color;
+    box-shadow: 0 0 5px 1px rgba($dark-color, 0.05);
+    padding: 20px;
+
+    &__row {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    &__btn {
+        padding: 0 32px;
+    }
+}

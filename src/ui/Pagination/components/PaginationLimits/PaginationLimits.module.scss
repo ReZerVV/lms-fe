@@ -1,0 +1,74 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.limits {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__value {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 1px solid $dark-color;
+        border-radius: 2px;
+        background: $white-color;
+        padding: 0 8px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__value_text {
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 20px;
+    }
+
+    &__arrow {
+        max-width: 12px;
+        width: 12px;
+        max-height: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark-color;
+        transition: transform 0.2s;
+    }
+
+    &__arrow_open {
+        transform: rotate(90deg);
+    }
+
+    &__options {
+        display: flex;
+        align-items: center;
+        border: 1px solid $dark-color;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    &__btn {
+        height: 36px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 20px;
+        outline: none;
+        border: none;
+        border-right: 1px solid $dark-color;
+        background: $white-color;
+        padding: 0 8px;
+        cursor: pointer;
+
+        &:nth-last-child(1) {
+            border-right: none;
+        }
+    }
+}

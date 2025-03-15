@@ -1,0 +1,30 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.checkout {
+    width: 100%;
+    padding: 50px 0;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 32px;
+        margin-bottom: 35px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__column {
+        width: 100%;
+
+        &:nth-child(2) {
+            max-width: 280px;
+        }
+    }
+}

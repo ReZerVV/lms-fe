@@ -1,0 +1,52 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.checkout {
+    width: 100%;
+
+    &__wrapper {
+        max-width: 1200px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__small {
+        max-width: 150px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 21px;
+    }
+
+    &__items {
+        max-height: 200px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        overflow-y: auto;
+    }
+}

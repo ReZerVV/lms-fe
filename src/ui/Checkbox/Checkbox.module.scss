@@ -1,0 +1,95 @@
+@import "@/shared/styles/shared/variables";
+
+.checkbox {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        scale: 0;
+    }
+
+    &__mark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba($dark-color, 0.24);
+        border-radius: 2px;
+        position: relative;
+        background-color: $dark-color;
+
+        &_sm {
+            width: 12px;
+            height: 12px;
+        }
+
+        &_md {
+            width: 16px;
+            height: 16px;
+        }
+
+        &_lg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &_error {
+            border-color: $red-color-500;
+
+            &:hover {
+                border-color: $red-color-500 !important;
+            }
+        }
+
+        &_disabled {
+            background-color: rgba($dark-color, 0.04);
+            border-color: rgba($dark-color, 0.08);
+        }
+
+        &_icon {
+            color: $white-color;
+
+            &_sm {
+                width: 8px;
+                height: 6px;
+            }
+
+            &_indeterminate {
+                &_sm {
+                    width: 7px;
+                }
+
+                &_md {
+                    width: 9px;
+                }
+            }
+        }
+    }
+
+    &__input:not(:checked) + .checkbox__mark,
+    &__input:not(:checked) + .checkbox__mark {
+        background-color: $white-color;
+
+        .checkbox__mark_icon {
+            display: none;
+        }
+
+        &:hover {
+            border-color: $dark-color;
+        }
+    }
+
+    &__input:not(:checked) + .checkbox__mark_disabled {
+        background-color: rgba($dark-color, 0.04);
+
+        &:hover {
+            border-color: rgba($dark-color, 0.08);
+        }
+    }
+}

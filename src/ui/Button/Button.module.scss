@@ -1,0 +1,99 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &__sm {
+        height: 32px;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 0 12px;
+    }
+
+    &__md {
+        height: 40px;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 0 16px;
+    }
+
+    &__lg {
+        height: 48px;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 0 24px;
+    }
+
+    &__primary {
+        font-family: $primary-font;
+        color: $white-color;
+        border-radius: 2px;
+        background: $gray-color-950;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        .button__icon {
+            color: $white-color;
+        }
+    }
+
+    &__secondary {
+        font-family: $primary-font;
+        color: $dark-color;
+        border-radius: 2px;
+        background: $white-color;
+
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        .button__icon {
+            color: $dark-color;
+        }
+    }
+
+    &__text {
+        font-family: $primary-font;
+        color: $dark-color;
+    }
+
+    &__icon {
+        max-width: 16px;
+        max-height: 16px;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    &__block {
+        width: 100%;
+    }
+
+    &__disabled {
+        color: rgba($dark-color, 0.24);
+        border-color: rgba($dark-color, 0.08);
+        background: rgba($dark-color, 0.04);
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,80 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.cart {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 10px;
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    &__title {
+        max-width: 320px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 21px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__text {
+        display: flex;
+        flex-shrink: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba($dark-color, 0.8);
+        line-height: 18px;
+
+        span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+
+    &__btn {
+        max-width: 40px;
+        max-height: 40px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $red-color-500;
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-left: auto;
+        cursor: pointer;
+    }
+}

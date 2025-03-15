@@ -1,3 +1,17 @@
+import {
+    HomeCategories,
+    HomeHero,
+    HomeNewProducts,
+    Newsletter
+} from "@/widgets";
+
 export default function Home() {
-    return <></>;
+    return (
+        <>
+            <HomeHero />
+            <HomeNewProducts />
+            <HomeCategories />
+            <Newsletter />
+        </>
+    );
 }

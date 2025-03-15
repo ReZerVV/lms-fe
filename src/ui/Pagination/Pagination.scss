@@ -1,0 +1,14 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.rc-pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-pagination-disabled {
+    div {
+        color: rgba($dark-color, 0.24);
+    }
+}

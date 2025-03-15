@@ -1,0 +1,51 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.table {
+    &__body_item {
+        height: 52px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 1px solid $gray-color-100;
+        border-right: 1px solid $gray-color-100;
+        border-bottom: 1px solid $gray-color-100;
+    }
+
+    &__body_checkbox,
+    &__body_dots {
+        height: 52px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        padding: 0 8px;
+    }
+
+    &__body_row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.3fr;
+        align-items: center;
+    }
+
+    &__body_value {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        overflow: hidden;
+    }
+
+    &__body_value_text {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba($dark-color, 0.8);
+        line-height: 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

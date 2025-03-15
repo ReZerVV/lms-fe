@@ -1,0 +1,35 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.newsletter {
+    padding: 50px 0;
+
+    &__inner {
+        border-radius: 4px;
+        background: $gray-color-100;
+        padding: 50px;
+    }
+
+    &__title {
+        font-size: 21px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 400;
+        color: $dark-color;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
