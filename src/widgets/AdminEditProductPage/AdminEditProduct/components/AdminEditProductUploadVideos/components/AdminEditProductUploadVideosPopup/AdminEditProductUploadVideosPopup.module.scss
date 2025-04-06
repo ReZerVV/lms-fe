@@ -1,0 +1,58 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.popup {
+    &__title {
+        font-size: 21px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    &__dropzone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px dashed $gray-color-200;
+        border-radius: 12px;
+        padding: 16px;
+    }
+
+    &__dropzone_icon {
+        max-width: 20px;
+        max-height: 20px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $dark-color;
+    }
+
+    &__dropzone_title {
+        font-size: 14px;
+        font-weight: 500;
+        color: $gray-color-950;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__dropzone_text {
+        font-size: 12px;
+        font-weight: 400;
+        color: $gray-color-900;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}

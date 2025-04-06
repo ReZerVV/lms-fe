@@ -1,0 +1,80 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 8px;
+    background: $gray-color-100;
+    padding: 12px;
+
+    &__column {
+        width: 210px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    &__input {
+        width: 180px;
+    }
+
+    &__title {
+        max-width: 160px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: $gray-color-950;
+        line-height: 21px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__size {
+        font-size: 14px;
+        font-weight: 400;
+        color: $gray-color-900;
+        line-height: 20px;
+    }
+
+    &__badge {
+        height: 24px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 400;
+        color: $white-color;
+        line-height: 16px;
+        border-radius: 4px;
+        padding: 0 6px;
+    }
+
+    &__badge_success {
+        background: $green-color-400;
+    }
+
+    &__badge_pending {
+        background: $orange-color-500;
+    }
+
+    &__btn_error {
+        background: $red-color-500;
+
+        &:hover {
+            background: $red-color-500;
+        }
+    }
+}

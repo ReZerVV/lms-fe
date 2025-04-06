@@ -1,11 +1,7 @@
 import * as yup from "yup";
 
-import {
-    INVALID_PASSWORD,
-    MAX_LENGTH,
-    MIN_LENGTH,
-    PASSWORD_REGEX
-} from "@/shared";
+import { INVALID_PASSWORD, MAX_LENGTH, MIN_LENGTH } from "./errorMessages";
+import { PASSWORD_REGEX } from "./regexs";
 
 export const validator = {
     password: yup

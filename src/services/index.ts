@@ -4,3 +4,4 @@ export { default as CategoryService } from "./CategoryService";
 export { default as ProductService } from "./ProductService";
 export { default as CatalogService } from "./CatalogService";
 export { default as OrderService } from "./OrderService";
+export { default as LessonsService } from "./LessonsService";

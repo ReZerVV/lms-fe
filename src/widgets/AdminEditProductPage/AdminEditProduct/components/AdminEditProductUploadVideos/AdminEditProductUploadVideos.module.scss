@@ -1,0 +1,18 @@
+@use "@/shared/styles/shared/variables.scss" as *;
+
+.upload {
+    &__head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        &_title {
+            font-size: 21px;
+            font-weight: 500;
+            color: $dark-color;
+            line-height: 32px;
+        }
+    }
+}
