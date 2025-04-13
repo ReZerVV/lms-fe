@@ -6,3 +6,4 @@ export * from "./ImageSlider";
 export * from "./ProductCard";
 export * from "./ProductCounter";
 export * from "./ProductsSlider";
+export * from "./VideoPlayer";

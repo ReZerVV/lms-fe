@@ -5,7 +5,8 @@ import {
     Tags,
     UserPen,
     Users,
-    History
+    History,
+    Badge
 } from "lucide-react";
 
 export const HOME_ROUTE = "/";
@@ -13,6 +14,7 @@ export const CATALOG_ROUTE = "/catalog";
 export const PRODUCT_ROUTE = "/product";
 export const PROFILE_ROUTE = "/profile";
 export const HISTORY_ROUTE = "/profile/history";
+export const PROFILE_PRODUCTS_ROUTE = "/profile/products";
 export const CART_ROUTE = "/cart";
 export const FAVORITES_ROUTE = "/favorites";
 export const CHECKOUT_ROUTE = "/checkout";
@@ -48,9 +50,9 @@ export const profileMenuList = [
         icon: <UserPen size={20} strokeWidth={1.5} />
     },
     {
-        href: HISTORY_ROUTE,
-        title: "History",
-        icon: <History size={20} strokeWidth={1.5} />
+        href: PROFILE_PRODUCTS_ROUTE,
+        title: "My products",
+        icon: <Badge size={20} strokeWidth={1.5} />
     }
 ];
 

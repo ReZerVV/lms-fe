@@ -1,0 +1,55 @@
+@use "@/shared/styles/shared/variables.scss" as *;
+
+.item {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid $gray-color-200;
+    border-radius: 4px;
+    background: $gray-color-100;
+    padding: 0 20px;
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__number {
+        font-size: 18px;
+        font-weight: 500;
+        color: $gray-color-900;
+        line-height: 21px;
+    }
+
+    &__title {
+        max-width: 880px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark-color;
+        line-height: 21px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__delete {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: $red-color-500;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        background: $white-color;
+        cursor: pointer;
+    }
+}

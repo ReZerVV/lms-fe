@@ -15,4 +15,11 @@
             line-height: 32px;
         }
     }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
 }

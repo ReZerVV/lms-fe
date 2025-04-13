@@ -12,14 +12,6 @@ export const AdminUsersPopupSchema = yup.object({
     lastName: yup.string().trim().required(REQUIRED_FIELD),
     email: yup.string().trim().email(INVALID_EMAIL).required(REQUIRED_FIELD),
     phone: yup.string().trim(),
-    country: yup.string().trim(),
-    state: yup.string().trim(),
-    city: yup.string().trim(),
-    street: yup.string().trim(),
-    house: yup.string().trim(),
-    flat: yup.string().trim(),
-    floor: yup.string().trim(),
-    zip: yup.string().trim(),
     password: yup
         .string()
         .trim()

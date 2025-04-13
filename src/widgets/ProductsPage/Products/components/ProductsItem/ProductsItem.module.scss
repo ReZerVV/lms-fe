@@ -1,0 +1,26 @@
+@import "@/shared/styles/shared/variables.scss";
+
+.item {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid $gray-color-200;
+    border-radius: 8px;
+    background: $gray-color-100;
+    padding: 0 20px;
+
+    &__title {
+        max-width: 880px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: $gray-color-900;
+        line-height: 21px;
+        white-space: nowrap;
+        text-overflow: hidden;
+        overflow: hidden;
+    }
+}

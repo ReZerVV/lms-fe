@@ -26,15 +26,7 @@ const CheckoutForm = () => {
             firstName: user?.firstName || "",
             lastName: user?.lastName || "",
             email: user?.email || "",
-            phone: user?.phoneNumber || "",
-            country: user?.address?.country || "",
-            state: user?.address?.state || "",
-            city: user?.address?.city || "",
-            street: user?.address?.street || "",
-            house: user?.address?.house || "",
-            flat: user?.address?.flat || "",
-            floor: user?.address?.floor || "",
-            zip: user?.address?.zip || ""
+            phone: user?.phoneNumber || ""
         }
     });
 
@@ -56,14 +48,6 @@ const CheckoutForm = () => {
             phoneNumber: data?.phone,
             firstName: data?.firstName,
             lastName: data?.lastName,
-            country: data?.country,
-            state: data?.state,
-            city: data?.city,
-            street: data?.street,
-            house: data?.house || null,
-            flat: data?.flat || null,
-            floor: data?.floor || null,
-            zip: data?.zip || null,
             items:
                 cart?.map((item) => {
                     return {
@@ -100,54 +84,7 @@ const CheckoutForm = () => {
                     {...register("phone")}
                 />
             </div>
-            <div className={styles.checkout__row}>
-                <Input
-                    label="Country"
-                    error={errors.country?.message}
-                    {...register("country")}
-                />
-                <Input
-                    label="State"
-                    error={errors.state?.message}
-                    {...register("state")}
-                />
-                <Input
-                    label="City"
-                    error={errors.city?.message}
-                    {...register("city")}
-                />
-            </div>
-            <div className={styles.checkout__row}>
-                <Input
-                    label="Street"
-                    error={errors.street?.message}
-                    {...register("street")}
-                />
-                <div className={styles.checkout__row}>
-                    <Input
-                        label="House"
-                        error={errors.house?.message}
-                        {...register("house")}
-                    />
-                    <Input
-                        label="Flat"
-                        error={errors.flat?.message}
-                        {...register("flat")}
-                    />
-                    <Input
-                        type="number"
-                        label="Floor"
-                        error={errors.floor?.message}
-                        {...register("floor")}
-                    />
-                    <Input
-                        type="number"
-                        label="Zip"
-                        error={errors.zip?.message}
-                        {...register("zip")}
-                    />
-                </div>
-            </div>
+
             <div className={styles.checkout__row}>
                 <Button type="submit">Confirm Order</Button>
             </div>

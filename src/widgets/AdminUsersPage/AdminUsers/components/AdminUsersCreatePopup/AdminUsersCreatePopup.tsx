@@ -38,14 +38,6 @@ const AdminUsersCreatePopup = ({ onClose }: AdminUsersCreatePopupProps) => {
             lastName: data.lastName,
             email: data.email,
             phone: data.phone,
-            country: data.country,
-            state: data.state,
-            city: data.city,
-            street: data.street,
-            house: data.house,
-            flat: data.flat,
-            floor: data.floor,
-            zip: data.zip,
             password: data.password
         };
 
@@ -83,54 +75,6 @@ const AdminUsersCreatePopup = ({ onClose }: AdminUsersCreatePopupProps) => {
                             error={errors.phone?.message}
                             {...register("phone")}
                         />
-                    </div>
-                    <div className={styles.popup__row}>
-                        <Input
-                            placeholder="Country"
-                            error={errors.country?.message}
-                            {...register("country")}
-                        />
-                        <Input
-                            placeholder="State"
-                            error={errors.state?.message}
-                            {...register("state")}
-                        />
-                        <Input
-                            placeholder="City"
-                            error={errors.city?.message}
-                            {...register("city")}
-                        />
-                    </div>
-                    <div className={styles.popup__row}>
-                        <Input
-                            placeholder="Street"
-                            error={errors.street?.message}
-                            {...register("street")}
-                        />
-                        <div className={styles.popup__row}>
-                            <Input
-                                placeholder="House"
-                                error={errors.house?.message}
-                                {...register("house")}
-                            />
-                            <Input
-                                placeholder="Flat"
-                                error={errors.flat?.message}
-                                {...register("flat")}
-                            />
-                            <Input
-                                type="number"
-                                placeholder="Floor"
-                                error={errors.floor?.message}
-                                {...register("floor")}
-                            />
-                            <Input
-                                type="number"
-                                placeholder="Zip"
-                                error={errors.zip?.message}
-                                {...register("zip")}
-                            />
-                        </div>
                     </div>
                     <div className={styles.popup__row}>
                         <PasswordInput

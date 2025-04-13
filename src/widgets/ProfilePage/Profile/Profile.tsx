@@ -1,8 +1,4 @@
-import {
-    ProfileAddressForm,
-    ProfileForm,
-    ProfilePasswordForm
-} from "@/widgets";
+import { ProfileForm, ProfilePasswordForm } from "@/widgets";
 
 import styles from "./Profile.module.scss";
 
@@ -14,9 +10,6 @@ const Profile = () => {
                     <h2 className={styles.profile__title}>Profile</h2>
                     <div className={styles.profile__column}>
                         <ProfileForm />
-                    </div>
-                    <div className={styles.profile__column}>
-                        <ProfileAddressForm />
                     </div>
                     <div className={styles.profile__column}>
                         <ProfilePasswordForm />

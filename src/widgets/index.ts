@@ -15,3 +15,5 @@ export * from "./CartPage";
 export * from "./FavoritesPage";
 export * from "./HistoryPage";
 export * from "./AdminOrdersPage";
+export * from "./ProductsPage";
+export * from "./ProfileProductPage";
