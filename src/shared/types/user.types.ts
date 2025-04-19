@@ -1,3 +1,5 @@
+import { ILesson } from "./lesson.types";
+
 export interface IUser {
     id: string;
     firstName: string;
@@ -94,4 +96,50 @@ export interface CreateUserRequest {
     floor?: string | undefined;
     zip?: string | undefined;
     password?: string | undefined;
+}
+
+export interface ICourse {
+    id: string;
+    articul: string;
+    title: string;
+    description: string;
+    price: number;
+    discountPrice: number;
+    isActive: boolean;
+    category: {
+        id: string;
+        isActive: boolean;
+        iconUrl: string;
+        title: string;
+        description: string;
+    };
+    images: string[];
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export interface GetCoursesResponse {
+    success: boolean;
+    data: ICourse[];
+}
+
+export interface GetCoursesByIdResponse {
+    id: string;
+    articul: string;
+    title: string;
+    description: string;
+    price: number;
+    discountPrice: number;
+    isActive: boolean;
+    category: {
+        id: string;
+        isActive: boolean;
+        iconUrl: string;
+        title: string;
+        description: string;
+    };
+    images: string[];
+    lessons: ILesson[];
+    createdAt: Date;
+    updatedAt: Date;
 }

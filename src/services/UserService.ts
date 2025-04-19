@@ -6,6 +6,8 @@ import {
     ChangeProfileResponse,
     ChangeUserRequest,
     CreateUserRequest,
+    GetCoursesByIdResponse,
+    GetCoursesResponse,
     GetMeResponse,
     GetUsersResponse,
     instance
@@ -30,6 +32,14 @@ export default class UserService {
         data: ChangeAddressRequest
     ): Promise<ChangeAddressResponse> => {
         return instance.patch("profile/address", data);
+    };
+
+    static getCourses = (): Promise<GetCoursesResponse> => {
+        return instance.get("profile/courses");
+    };
+
+    static getCourseById = (id: string): Promise<GetCoursesByIdResponse> => {
+        return instance.get(`profile/courses/${id}`);
     };
 
     static getUsers = (
