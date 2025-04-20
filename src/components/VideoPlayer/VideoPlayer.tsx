@@ -42,9 +42,18 @@ const VideoPlayer = ({ src }: VideoPlayerProps) => {
             playerRef.current?.dispose();
             playerRef.current = null;
         };
-    }, [src, videoRef, mounted]);
+    }, [videoRef, mounted]);
 
-    return (
+    useEffect(() => {
+        if (playerRef.current) {
+            playerRef.current.src([
+                { src: src, type: "video/mp4" },
+                { src: src, type: "video/webm" }
+            ]);
+        }
+    }, [src]);
+
+    return mounted ? (
         <div className={styles.video}>
             <video
                 ref={videoRef}
@@ -53,7 +62,7 @@ const VideoPlayer = ({ src }: VideoPlayerProps) => {
                 playsInline
             />
         </div>
-    );
+    ) : null;
 };
 
 export default VideoPlayer;

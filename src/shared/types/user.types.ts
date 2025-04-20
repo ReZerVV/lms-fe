@@ -124,22 +124,25 @@ export interface GetCoursesResponse {
 }
 
 export interface GetCoursesByIdResponse {
-    id: string;
-    articul: string;
-    title: string;
-    description: string;
-    price: number;
-    discountPrice: number;
-    isActive: boolean;
-    category: {
+    success: boolean;
+    data: {
         id: string;
-        isActive: boolean;
-        iconUrl: string;
+        articul: string;
         title: string;
         description: string;
+        price: number;
+        discountPrice: number;
+        isActive: boolean;
+        category: {
+            id: string;
+            isActive: boolean;
+            iconUrl: string;
+            title: string;
+            description: string;
+        };
+        images: string[];
+        lessons: ILesson[];
+        createdAt: Date;
+        updatedAt: Date;
     };
-    images: string[];
-    lessons: ILesson[];
-    createdAt: Date;
-    updatedAt: Date;
 }
