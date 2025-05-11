@@ -17,6 +17,7 @@ import {
 } from "@/shared";
 
 import styles from "./Header.module.scss";
+import Image from "next/image";
 
 const Header = () => {
     const user = useAuthStore((state) => state.user);
@@ -45,7 +46,13 @@ const Header = () => {
             <div className="container">
                 <div className={styles.header__inner}>
                     <Link href="/" className={styles.header__logo}>
-                        Clothes Shop
+                        <Image
+                            src="/img/logo.png"
+                            alt="logo"
+                            width={50}
+                            height={40}
+                        />
+                        KnowWay
                     </Link>
                     <nav className={styles.header__menu}>
                         <ul className={styles.header__list}>

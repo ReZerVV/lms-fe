@@ -6,8 +6,8 @@ import { AuthLayout, MainLayout } from "@/layouts";
 import "@/shared/styles/styles.scss";
 
 export const metadata: Metadata = {
-    title: "Shop",
-    description: "Shop description"
+    title: "KnowWay",
+    description: "E-Learning Platform"
 };
 
 export default function RootLayout({

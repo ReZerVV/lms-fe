@@ -17,6 +17,10 @@
         font-weight: 800;
         color: $dark-color;
         line-height: 32px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
     }
 
     &__list {

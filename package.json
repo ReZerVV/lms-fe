@@ -33,6 +33,8 @@
     "react-hook-form": "^7.54.2",
     "react-toastify": "^11.0.5",
     "reset-css": "^5.0.2",
+    "saas": "^1.0.0",
+    "sass": "^1.86.3",
     "swiper": "^11.2.5",
     "uuid": "^11.1.0",
     "video.js": "^8.22.0",
@@ -55,5 +57,6 @@
     "prettier": "^3.5.3",
     "typescript": "^5",
     "typescript-eslint": "^8.26.1"
-  }
+  },
+  "packageManager": "yarn@3.2.3+sha512.f26f951f67de0c6a33ee381e5ff364709c87e70eb5e65c694e4facde3512f1fa80b8679e6ba31ce7d340fbb46f08dd683af9457e240f25a204be7427940d767e"
 }

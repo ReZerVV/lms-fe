@@ -58,11 +58,6 @@ export const profileMenuList = [
 
 export const adminMenuList = [
     {
-        href: ADMIN_DASHBOARD_ROUTE,
-        title: "Analytics",
-        icon: <ChartNoAxesCombined size={20} strokeWidth={1.5} />
-    },
-    {
         href: ADMIN_PRODUCTS_ROUTE,
         title: "Products",
         icon: <Package size={20} strokeWidth={1.5} />

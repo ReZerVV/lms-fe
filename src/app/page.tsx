@@ -4,13 +4,15 @@ import {
     HomeNewProducts,
     Newsletter
 } from "@/widgets";
+import HomeRoadmaps from "@/widgets/HomePage/HomeRoadmaps/HomeRoadmaps";
 
 export default function Home() {
     return (
         <>
             <HomeHero />
-            <HomeNewProducts />
             <HomeCategories />
+            <HomeRoadmaps />
+            <HomeNewProducts />
             <Newsletter />
         </>
     );

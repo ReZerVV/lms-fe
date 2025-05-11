@@ -67,10 +67,6 @@ const Product = () => {
                                 ) : null}
                             </div>
                             <div className={styles.product__btns}>
-                                <ProductCounter
-                                    value={counterValue}
-                                    onChange={setCounterValue}
-                                />
                                 <Button
                                     className={styles.product__btn}
                                     rightIcon={

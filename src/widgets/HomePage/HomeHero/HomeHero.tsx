@@ -20,21 +20,23 @@ const HomeHero = () => {
         <section className={styles.home}>
             <div className="container">
                 <div className={styles.home__inner}>
-                    <h2 className={styles.home__title}>Discover Your Style</h2>
+                    <h2 className={styles.home__title}>
+                        Let's <br /> E-learning <br /> at your home
+                    </h2>
                     <p className={styles.home__text}>
-                        Shop the latest trends and timeless classics. Find
-                        everything you need to elevate your wardrobe today!
+                        Join thousands of learners worldwide. Master new skills,
+                        advance your career, and achieve your dreams.
                     </p>
                     <Button
                         className={styles.home__btn}
                         variant="secondary"
                         onClick={goCatalog}
                     >
-                        Shop now
+                        Start Learning Today
                     </Button>
                     <div className={styles.home__darken} />
                     <div className={styles.home__bg}>
-                        <Image src="/img/background-hero.jpg" alt="bg" fill />
+                        <Image src="/img/background-hero.png" alt="bg" fill />
                     </div>
                 </div>
             </div>

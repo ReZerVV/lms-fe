@@ -61,11 +61,6 @@ const CartItem = ({ data }: CartItemProps) => {
                 <button className={styles.cart__btn} onClick={handleRemove}>
                     <Trash strokeWidth={1} size={20} />
                 </button>
-                <ProductCounter
-                    size="sm"
-                    value={count}
-                    onChange={handleOnChangeCount}
-                />
             </div>
         </div>
     );
